@@ -1,0 +1,14 @@
+:root {
+  /* Primary Palette */
+  --primary: #051837;
+  --secondary: #adaf98;
+  --accent: #d3ab54;
+  --warning: #d5cc34;
+  --dark: #424243;
+
+  /* Optional Shades */
+  --white: #ffffff;
+  --black: #000000;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+}

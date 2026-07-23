@@ -1,0 +1,31 @@
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-warning {
+  background-color: var(--warning);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
