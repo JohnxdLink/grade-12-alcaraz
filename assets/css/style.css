@@ -10,10 +10,10 @@
 
 :root {
   /* Primary Palette */
-  --primary: #051837;
-  --secondary: #adaf98;
-  --accent: #d3ab54;
-  --warning: #d5cc34;
+  --primary: #d5cc34;
+  --secondary: #051837;
+  --accent: #adaf98;
+  --warning: #d3ab54;
   --dark: #424243;
 
   /* Optional Shades */

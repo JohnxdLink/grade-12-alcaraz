@@ -5,10 +5,31 @@
   z-index: 1;
 }
 
+.header__nav-item {
+  transition: all 0.3s ease;
+}
+
+.header__nav-item:hover {
+  color: var(--primary);
+}
+
+.header__anchor {
+  padding: 16px;
+  color: var(--white);
+  background-color: var(--gray);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.header__anchor:hover {
+  color: var(--black);
+  background-color: var(--primary);
+}
+
 .hero {
   height: 100dvh;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/background/hero.jpg");
+  color: var(--white);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
