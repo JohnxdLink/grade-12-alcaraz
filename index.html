@@ -26,9 +26,9 @@
       </header>
 
       <section class="hero d-flex flex-column items-center justify-center gap-3">
-        <h1 class="text-5xl">Grade <span class="text-primary">12 Alcaraz</span></h1>
-        <p class="text-xl text-md">Specialized in Programming</p>
-        <p class="w-3/4 text-lg text-center">
+        <h1 class="text-5xl text-white">Grade <span class="text-primary">12 Alcaraz</span></h1>
+        <p class="text-xl text-md text-white">Specialized in Programming</p>
+        <p class="w-3/4 text-lg text-center text-white">
           Welcome to the official digital portfolio of Grade 12 – Alcaraz from Britech College. This website showcases
           the creativity, technical skills, achievements, and personal growth of each student throughout the academic
           year. Explore individual portfolios and witness how every learner transforms ideas into meaningful digital
@@ -39,328 +39,383 @@
           <a class="header__anchor" href="#student-list">Browse Students</a>
           <a class="header__anchor" href="https://github.com/JohnxdLink" target="_blank">Castro John Christian</a>
         </div>
+
+        <section class="d-flex flex-row justify-center gap-10 metrics__absolute">
+          <article class="p-2 w-224 d-flex flex-row gap-3 border border-1 border-light-gray rounded-md metric__card">
+            <div class="metric__card--value rounded">
+              <h1 class="text-4xl">29</h1>
+            </div>
+            <div>
+              <h1 class="text-xl">Total</h1>
+              <p class="text-sm text-gray">Students</p>
+            </div>
+          </article>
+
+          <article class="p-2 w-224 d-flex flex-row gap-3 border border-1 border-light-gray rounded-md metric__card">
+            <div class="metric__card--value metric__card--male rounded">
+              <h1 class="text-4xl">22</h1>
+            </div>
+            <div>
+              <h1 class="text-xl">Male</h1>
+              <p class="text-sm text-gray">Students</p>
+            </div>
+          </article>
+
+          <article class="p-2 w-224 d-flex flex-row gap-3 border border-1 border-light-gray rounded-md metric__card">
+            <div class="metric__card--value metric__card--female rounded">
+              <h1 class="text-4xl">7</h1>
+            </div>
+            <div>
+              <h1 class="text-xl">Female</h1>
+              <p class="text-sm text-gray">Students</p>
+            </div>
+          </article>
+        </section>
       </section>
 
       <!-- Student list -->
-      <section id="student-list" class="d-flex flex-wrap justify-center gap-3">
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/amosora/index.html"
-        >
-          <h1>A</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Amosora</p>
-            <p>26-0096</p>
+      <section class="px-20 mt-20 d-flex flex-row gap-5">
+        <article class="w-50 d-flex flex-column gap-4">
+          <h1 class="text-3xl">Moments That Made Us</h1>
+          <p>
+            Every smile, every achievement, and every shared experience tells a story. Relive the unforgettable
+            memories, friendships, and milestones that shaped our journey together.
+          </p>
+          <div class="w-100 d-flex gap-3 img-container">
+            <div class="img-track">
+              <img src="https://placehold.co/480x512" class="w-480 h-512 rounded-lg bg-light-gray" />
+              <img src="https://placehold.co/480x512" class="w-480 h-512 rounded-lg bg-light-gray" />
+              <img src="https://placehold.co/480x512" class="w-480 h-512 rounded-lg bg-light-gray" />
+              <img src="https://placehold.co/480x512" class="w-480 h-512 rounded-lg bg-light-gray" />
+              <img src="https://placehold.co/480x512" class="w-480 h-512 rounded-lg bg-light-gray" />
+            </div>
           </div>
-        </a>
+        </article>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/arena/index.html"
-        >
-          <h1>A</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Arena</p>
-            <p>26-0255</p>
-          </div>
-        </a>
+        <article id="student-list" class="w-50 d-flex flex-wrap gap-3">
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/amosora/index.html"
+          >
+            <h1>A</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Amosora</p>
+              <p>26-0096</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/bersales/index.html"
-        >
-          <h1>B</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Bersales</p>
-            <p>26-0062</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/arena/index.html"
+          >
+            <h1>A</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Arena</p>
+              <p>26-0255</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/corrales/index.html"
-        >
-          <h1>C</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Corrales</p>
-            <p>26-0257</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/bersales/index.html"
+          >
+            <h1>B</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Bersales</p>
+              <p>26-0062</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/dabatos/index.html"
-        >
-          <h1>D</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Dabatos</p>
-            <p>26-1005</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/corrales/index.html"
+          >
+            <h1>C</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Corrales</p>
+              <p>26-0257</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/de_leon/index.html"
-        >
-          <h1>D</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>De Leon</p>
-            <p>26-0071</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/dabatos/index.html"
+          >
+            <h1>D</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Dabatos</p>
+              <p>26-1005</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/fuentes/index.html"
-        >
-          <h1>F</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Fuentes</p>
-            <p>26-0059</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/de_leon/index.html"
+          >
+            <h1>D</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>De Leon</p>
+              <p>26-0071</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/garces/index.html"
-        >
-          <h1>G</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Garces</p>
-            <p>26-0270</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/fuentes/index.html"
+          >
+            <h1>F</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Fuentes</p>
+              <p>26-0059</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/jalipa/index.html"
-        >
-          <h1>J</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Jalipa</p>
-            <p>26-0095</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/garces/index.html"
+          >
+            <h1>G</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Garces</p>
+              <p>26-0270</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/labanda/index.html"
-        >
-          <h1>L</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Labanda</p>
-            <p>26-0109</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/jalipa/index.html"
+          >
+            <h1>J</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Jalipa</p>
+              <p>26-0095</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/lentija/index.html"
-        >
-          <h1>L</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Lentija</p>
-            <p>26-0100</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/labanda/index.html"
+          >
+            <h1>L</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Labanda</p>
+              <p>26-0109</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/limen/index.html"
-        >
-          <h1>L</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Limen</p>
-            <p>26-0319</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/lentija/index.html"
+          >
+            <h1>L</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Lentija</p>
+              <p>26-0100</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/matondo/index.html"
-        >
-          <h1>M</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Matondo</p>
-            <p>26-0259</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/limen/index.html"
+          >
+            <h1>L</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Limen</p>
+              <p>26-0319</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/montoya/index.html"
-        >
-          <h1>M</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Montoya</p>
-            <p>26-0344</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/matondo/index.html"
+          >
+            <h1>M</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Matondo</p>
+              <p>26-0259</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/oflas/index.html"
-        >
-          <h1>O</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Oflas</p>
-            <p>26-0294</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/montoya/index.html"
+          >
+            <h1>M</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Montoya</p>
+              <p>26-0344</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/pechera/index.html"
-        >
-          <h1>P</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Pechera</p>
-            <p>26-0269</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/oflas/index.html"
+          >
+            <h1>O</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Oflas</p>
+              <p>26-0294</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/pepito/index.html"
-        >
-          <h1>P</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Pepito</p>
-            <p>26-0077</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/pechera/index.html"
+          >
+            <h1>P</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Pechera</p>
+              <p>26-0269</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/quiruben/index.html"
-        >
-          <h1>Q</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Quiruben</p>
-            <p>26-0080</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/pepito/index.html"
+          >
+            <h1>P</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Pepito</p>
+              <p>26-0077</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/recta/index.html"
-        >
-          <h1>R</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Recta</p>
-            <p>26-0293</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/quiruben/index.html"
+          >
+            <h1>Q</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Quiruben</p>
+              <p>26-0080</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/rondina/index.html"
-        >
-          <h1>R</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Rondina</p>
-            <p>26-0060</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/recta/index.html"
+          >
+            <h1>R</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Recta</p>
+              <p>26-0293</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/semblante/index.html"
-        >
-          <h1>S</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Semblante</p>
-            <p>26-XXXX</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/rondina/index.html"
+          >
+            <h1>R</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Rondina</p>
+              <p>26-0060</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/temperatura/index.html"
-        >
-          <h1>T</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Temperatura</p>
-            <p>26-0256</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/semblante/index.html"
+          >
+            <h1>S</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Semblante</p>
+              <p>26-XXXX</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/templa/index.html"
-        >
-          <h1>T</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Templa</p>
-            <p>26-0085</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/temperatura/index.html"
+          >
+            <h1>T</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Temperatura</p>
+              <p>26-0256</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/andriano/index.html"
-        >
-          <h1>A</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Andriano</p>
-            <p>26-0317</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/templa/index.html"
+          >
+            <h1>T</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Templa</p>
+              <p>26-0085</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/balanuico/index.html"
-        >
-          <h1>B</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Balanuico</p>
-            <p>26-0316</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/andriano/index.html"
+          >
+            <h1>A</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Andriano</p>
+              <p>26-0317</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/maglasang/index.html"
-        >
-          <h1>M</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Maglasang</p>
-            <p>26-0083</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/balanuico/index.html"
+          >
+            <h1>B</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Balanuico</p>
+              <p>26-0316</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/managaytay/index.html"
-        >
-          <h1>M</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Managaytay</p>
-            <p>26-0087</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/maglasang/index.html"
+          >
+            <h1>M</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Maglasang</p>
+              <p>26-0083</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/parallon/index.html"
-        >
-          <h1>P</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Parallon</p>
-            <p>26-0097</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/managaytay/index.html"
+          >
+            <h1>M</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Managaytay</p>
+              <p>26-0087</p>
+            </div>
+          </a>
 
-        <a
-          class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-gray"
-          href="pages/student/visoc/index.html"
-        >
-          <h1>V</h1>
-          <div class="d-flex flex-column gap-2">
-            <p>Visoc</p>
-            <p>26-0088</p>
-          </div>
-        </a>
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/parallon/index.html"
+          >
+            <h1>P</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Parallon</p>
+              <p>26-0097</p>
+            </div>
+          </a>
+
+          <a
+            class="p-3 w-160 d-flex items-center gap-3 border rounded-md border-light-gray"
+            href="pages/student/visoc/index.html"
+          >
+            <h1>V</h1>
+            <div class="d-flex flex-column gap-2">
+              <p>Visoc</p>
+              <p>26-0088</p>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section class="px-20 mt-10">
+        <h1 class="text-3xl">Lorem Ipsum</h1>
       </section>
     </main>
   </body>

@@ -150,6 +150,10 @@
   border-color: var(--gray);
 }
 
+.border-light-gray {
+  border-color: var(--light-gray);
+}
+
 .border-red {
   border-color: #ef4444;
 }

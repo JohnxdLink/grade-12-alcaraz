@@ -26,6 +26,13 @@
   background-color: var(--light);
 }
 
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
 .bg-transparent {
   background-color: transparent;
 }

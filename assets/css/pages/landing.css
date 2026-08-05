@@ -34,3 +34,55 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.metrics__absolute {
+  position: absolute;
+  bottom: -42px;
+  z-index: 1;
+  color: var(--black);
+}
+
+.metric__card {
+  background-color: var(--white);
+}
+
+.metric__card--value {
+  width: 72px;
+  height: 72px;
+  background: var(--warning-50);
+  border: 1px solid var(--warning);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metric__card--male {
+  background-color: var(--secondary-50);
+  border: 1px solid var(--secondary);
+}
+
+.metric__card--female {
+  background-color: var(--accent-50);
+  border: 1px solid var(--accent);
+}
+
+.img-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: slideLeft 25s linear infinite;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
