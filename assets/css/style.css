@@ -5,15 +5,18 @@
 @import url("./base/flex.css");
 @import url("./base/gap.css");
 @import url("./base/padding.css");
+@import url("./base/margin.css");
 @import url("./base/border.css");
 @import url("./base/width.css");
+@import url("./base/height.css");
+@import url("./base/colors.css");
 
 :root {
   /* Primary Palette */
-  --primary: #051837;
-  --secondary: #adaf98;
-  --accent: #d3ab54;
-  --warning: #d5cc34;
+  --primary: #d5cc34;
+  --secondary: #051837;
+  --accent: #adaf98;
+  --warning: #d3ab54;
   --dark: #424243;
 
   /* Optional Shades */
@@ -21,4 +24,9 @@
   --black: #000000;
   --light: #f8f9fa;
   --gray: #6c757d;
+  --light-gray: #c3c2c2;
+
+  --warning-50: #d3ab5480;
+  --secondary-50: #05183780;
+  --accent-50: #adaf9880;
 }
