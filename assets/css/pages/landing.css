@@ -2,33 +2,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: var(--z-fixed);
 }
 
 .header__nav-item {
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
 }
 
 .header__nav-item:hover {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .header__anchor {
-  padding: 16px;
-  color: var(--white);
-  background-color: var(--gray);
-  border-radius: 16px;
-  transition: all 0.3s ease;
+  padding: var(--space-16);
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-normal);
 }
 
 .header__anchor:hover {
-  color: var(--black);
-  background-color: var(--primary);
+  color: var(--color-black);
+  background-color: var(--color-primary);
 }
 
 .hero {
   height: 100dvh;
-  color: var(--white);
+  color: var(--color-white);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -38,32 +38,32 @@
 .metrics__absolute {
   position: absolute;
   bottom: -42px;
-  z-index: 1;
-  color: var(--black);
+  z-index: var(--z-fixed);
+  color: var(--color-black);
 }
 
 .metric__card {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .metric__card--value {
   width: 72px;
   height: 72px;
-  background: var(--warning-50);
-  border: 1px solid var(--warning);
+  background: var(--color-warning-50);
+  border: var(--border-thin) solid var(--color-warning);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .metric__card--male {
-  background-color: var(--secondary-50);
-  border: 1px solid var(--secondary);
+  background-color: var(--color-secondary-50);
+  border: var(--border-thin) solid var(--color-secondary);
 }
 
 .metric__card--female {
-  background-color: var(--accent-50);
-  border: 1px solid var(--accent);
+  background-color: var(--color-accent-50);
+  border: var(--border-thin) solid var(--color-accent);
 }
 
 .img-container {
@@ -73,7 +73,7 @@
 
 .img-track {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-16);
   width: max-content;
   animation: slideLeft 25s linear infinite;
 }
@@ -82,6 +82,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
