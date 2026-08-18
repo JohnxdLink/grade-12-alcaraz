@@ -1,0 +1,22 @@
+.header {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__logo--img-size {
+  width: 72px;
+  height: 72px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 12px;
+}
