@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      ACTIVITY GUIDE:
+      The viewport meta tag makes the website responsive
+      on different screen sizes such as phones, tablets,
+      and desktop computers.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      ACTIVITY:
+      Change the title to your own name and "Portfolio".
+      Example:
+      <title>Juan Dela Cruz | Portfolio</title>
+    -->
+    <title>Utsugi Lenka | Portfolio</title>
+
+    <!--
+      This is the MAIN stylesheet of the website.
+
+      IMPORTANT:
+      The style.css file should import the reusable
+      text.css file.
+
+      Example inside style.css:
+
+      @import url("./base/text.css");
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+      This stylesheet is specifically for the landing page.
+
+      ACTIVITY:
+      Your landing page layout and section-specific styles
+      should be placed in landing.css.
+    -->
+    <link rel="stylesheet" href="./assets/css/pages/landing.css" />
+  </head>
+
+  <body>
+    <!--
+      ==================================================
+      HEADER
+      ==================================================
+
+      ACTIVITY:
+      Create the header of your portfolio.
+
+      The header contains:
+      1. School logo
+      2. School name
+      3. Grade/section
+      4. Navigation menu
+    -->
+    <main>
+      <header class="header">
+        <!--
+          HEADER LOGO
+
+          ACTIVITY:
+          Replace the image with your own school logo
+          or portfolio logo.
+
+          Change:
+          - image source
+          - alt text
+          - school name
+          - grade and section
+        -->
+        <div class="header__logo">
+          <img class="header__logo--img-size" src="./assets/images/logo/britech-logo.png" alt="Britech logo" />
+
+          <div>
+            <h1>Britech College</h1>
+            <p>Grade 12 - Alcaraz</p>
+          </div>
+        </div>
+
+        <!--
+          NAVIGATION
+
+          ACTIVITY:
+          The navigation should contain links to the
+          different pages of your portfolio.
+
+          You may add, remove, or rename pages depending
+          on your portfolio requirements.
+        -->
+        <nav class="header__nav">
+          <!-- Current/Home page -->
+          <a href="#">Home</a>
+
+          <!-- Other portfolio pages -->
+          <a href="pages/dashboard.html">Dashboard</a>
+          <a href="pages/achievements.html">Achievements</a>
+          <a href="pages/gallery.html">Gallery</a>
+          <a href="pages/contacts.html">Contacts</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <article class="hero__img-card">
+          <img class="hero__img" src="https://placehold.co/600x400" alt="" />
+        </article>
+
+        <article class="hero__details">
+          <h1 class="text-4xl">ryuharis semblantee</h1>
+          <p class="text-md">grade12 alcaraz</p>
+        </article>
+      </section>
+
+      <!--
+        ACTIVITY:
+        In your landing.css you have to create a class selector name .card (If not yet exist).
+        inside of that class selector .card you have to add following properties and value:
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+
+        You have to apply all sections except above
+      
+      
+      -->
+
+      <!-- 
+        ACTIVITY
+        For h1 or headings use the existing text.css  you have to call the class selector of text-2xl
+        For p or paragprahs you have to use the text-base class selector
+        -->
+
+      <section class="card">
+        <h1 class="text-2xl">Personal Information</h1>
+        <!-- New activity -->
+        <p class="text-base">jagobiao mandaue city</p>
+        <p>09685692554</p>
+        <p>ryusemblante</p>
+        <p>september4 2005</p>
+
+        <h1>Educational Background</h1>
+        <p>leonardwood elementary</p>
+        <p>jagobiao school</p>
+        <p>informatics</p>
+      </section>
+
+      <section>
+        <h1>My expectation</h1>
+        <p>
+          i expect my school to provide quality education and teachers who truly care about student growth. I aslo hope
+          for a safe and positive environment where we learn, express ourselves, and build our skills for the future.
+        </p>
+      </section>
+
+      <section>
+        <h2>Hobbies</h2>
+        <!-- Enter your list of hobbies -->
+        <p>sleep walk at night</p>
+        <p>skateboarding/p></p>
+        <p>basketball</p>
+      </section>
+
+      <section>
+        <h1>Interest</h1>
+        <!-- Add your interest -->
+        <p>volunteering, dancing,skateboarding,drinking beer</p>
+        <p>want to watch anime and playing skateboard cause i am a skater</p>
+        <p>cooking,cycling cebu, iwant to go mountain and relax with my friends</p>
+      </section>
+    </main>
+  </body>
+</html>
