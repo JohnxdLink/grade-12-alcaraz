@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oflas | Portfolio</title>
+    <!--
+      This is the MAIN stylesheet of the website.
+
+      IMPORTANT:
+      The style.css file should import the reusable
+      text.css file.
+
+      Example inside style.css:
+
+      @import url("./base/text.css");
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+      This stylesheet is specifically for the landing page.
+
+      ACTIVITY:
+      Your landing page layout and section-specific styles
+      should be placed in landing.css.
+    -->
+    <link rel="stylesheet" href="./assets/css/pages/landing.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <!--
+          HEADER LOGO
+
+          ACTIVITY:
+          Replace the image with your own school logo
+          or portfolio logo.
+
+          Change:
+          - image source
+          - alt text
+          - school name
+          - grade and section
+        -->
+        <div class="header__logo">
+          <img class="header__logo--img-size" src="./assets/images/logo/britech-logo.png" alt="Britech logo" />
+
+          <div>
+            <h1>Britech College</h1>
+            <p>Grade 12 - Alcaraz</p>
+          </div>
+        </div>
+
+        <!--
+          NAVIGATION
+
+          ACTIVITY:
+          The navigation should contain links to the
+          different pages of your portfolio.
+
+          You may add, remove, or rename pages depending
+          on your portfolio requirements.
+        -->
+        <nav class="header__nav">
+          <!-- Current/Home page -->
+          <a href="#">Home</a>
+
+          <!-- Other portfolio pages -->
+          <a href="pages/dashboard.html">Dashboard</a>
+          <a href="pages/achievements.html">Achievements</a>
+          <a href="pages/gallery.html">Gallery</a>
+          <a href="pages/contacts.html">Contacts</a>
+        </nav>
+      </header>
+
+      <!--This is the second part of the Z-Pattern where
+        visitors immediately see the student's profile. -->
+
+      <section class="hero">
+        <article class="hero__img-card">
+          <img class="hero__img" src="https://placehold.co/600x400" alt="" />
+        </article>
+
+        <article class="hero__details">
+          <!-- 
+            ACTIVITY
+            Use the text.css and apply the class selector
+          -->
+          <h1 class="text-4xl">John Dave Oflas</h1>
+          <p class="text-base">12-Alcaraz</p>
+        </article>
+      </section>
+
+      <!--
+          ACTIVITY
+          The section of educational, hobbies and interests, you have to change to "article" element
+          And you have to add new "section" element  
+        -->
+
+      <!-- 
+        ACTIVITY
+        The section of educational, hobbies and interests, you have to change to "article" element
+        And you have to add new "section" element
+
+
+        In your landing.css you have to create a class selector name .row-card (If not yet exist).
+        inside of that class selector .row-card you have to add following properties and value:
+        display: flex;
+        flex-direction: row;
+        padding: 24px;
+        gap: 12px
+      -->
+
+      <!-- 
+            ACTIVITY
+            Use the text.css and apply the class selector
+          -->
+
+      <section class="row-card">
+        <!-- Card 1
+        Personal Information -->
+
+        <article class="row-card__item">
+          <h2 class="text-2xl">Personal Information</h2>
+
+          <p class="text-base">Addres:pulpogan 1,consolacion cebu</p>
+          <p class="text-base">Phone:09487511910</p>
+          <p class="text-base">Email:johndaveoflas123@gmail.com</p>
+          <p class="text-base">Birthdate:June,26,2009</p>
+        </article>
+
+        <!-- Card 2
+        Educational Background -->
+
+        <article class="row-card__item">
+          <h2 class="text-2xl">Educational Background</h2>
+          <p class="text-base">Consolacion Central School</p>
+          <p class="text-base">Jagobiao National High School</p>
+          <p class="text-base">Informatics College Cebu</p>
+          <p class="text-base">Brictech College</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2 class="text-2xl">My Expectation</h2>
+        <p class="text-base">
+          My Expectation is this subject will be hard and mentally tiring so i hope that my teacher will do their best.I
+          got hard time understanding code so I hope the my classmate and teacher is approchable.I also expect that this
+          subject will be fun and exciting.
+        </p>
+      </section>
+
+      <section class="row-card">
+        <h2 class="text-2xl">Hobbies</h2>
+        <!-- Enter your list of hobbies -->
+        <p class="text-base">My hobby is playing chess.</p>
+        <p class="text-base">I do calisthenics to keep my body healty.</p>
+        <p class="text-base">sometimes I reading book.</p>
+      </section>
+
+      <section class="row-card">
+        <h2 class="text-2xl">Interest</h2>
+        <!-- Add your interest -->
+        <p class="text-base">Im interested of programming.</p>
+        <p class="text-base">Im also interested in arm wrestling.</p>
+        <p class="text-base">my favorite subject is history.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="text-base">&copy; 2026 John Dave L. Oflas.All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
