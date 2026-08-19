@@ -101,7 +101,6 @@ a different logo size.
 
 .header__logo--img-size {
   width: 72px;
-
   height: 72px;
 }
 
@@ -199,9 +198,7 @@ Center the student's name and grade/section.
 
 .hero__details {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -217,9 +214,7 @@ Use flexbox to center the profile image.
 
 .hero__img-card {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
 
@@ -239,7 +234,6 @@ Make the profile picture:
 
 .hero__img {
   width: 256px;
-
   height: 256px;
 
   /*
@@ -270,9 +264,7 @@ Use flexbox to place them beside each other.
 
 .details {
   padding: 24px;
-
   display: flex;
-
   flex-direction: row;
 }
 
@@ -310,11 +302,8 @@ Example:
 
 .column-card {
   padding: 24px;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -331,7 +320,6 @@ section.
 
 .column-card__text {
   text-align: center;
-
   margin-top: 12px;
 }
 
@@ -354,7 +342,6 @@ that have a similar layout.
 
 .block-card {
   padding: 24px;
-
   display: block;
 }
 
@@ -371,10 +358,7 @@ and vertically.
 
 .footer {
   padding: 24px;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
