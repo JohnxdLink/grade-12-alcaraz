@@ -2,16 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!--
+      ACTIVITY GUIDE:
+      The viewport meta tag makes the website responsive
+      on different screen sizes such as phones, tablets,
+      and desktop computers.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      ACTIVITY:
+      Change the title to your own name and "Portfolio".
+      Example:
+      <title>Juan Dela Cruz | Portfolio</title>
+    -->
     <title>Utsugi Lenka | Portfolio</title>
 
+    <!--
+      This is the MAIN stylesheet of the website.
+
+      IMPORTANT:
+      The style.css file should import the reusable
+      text.css file.
+
+      Example inside style.css:
+
+      @import url("./base/text.css");
+    -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+      This stylesheet is specifically for the landing page.
+
+      ACTIVITY:
+      Your landing page layout and section-specific styles
+      should be placed in landing.css.
+    -->
     <link rel="stylesheet" href="./assets/css/pages/landing.css" />
   </head>
 
   <body>
+    <!--
+      ==================================================
+      HEADER
+      ==================================================
+
+      ACTIVITY:
+      Create the header of your portfolio.
+
+      The header contains:
+      1. School logo
+      2. School name
+      3. Grade/section
+      4. Navigation menu
+    -->
     <main>
       <header class="header">
+        <!--
+          HEADER LOGO
+
+          ACTIVITY:
+          Replace the image with your own school logo
+          or portfolio logo.
+
+          Change:
+          - image source
+          - alt text
+          - school name
+          - grade and section
+        -->
         <div class="header__logo">
           <img class="header__logo--img-size" src="./assets/images/logo/britech-logo.png" alt="Britech logo" />
 
@@ -21,8 +81,21 @@
           </div>
         </div>
 
+        <!--
+          NAVIGATION
+
+          ACTIVITY:
+          The navigation should contain links to the
+          different pages of your portfolio.
+
+          You may add, remove, or rename pages depending
+          on your portfolio requirements.
+        -->
         <nav class="header__nav">
+          <!-- Current/Home page -->
           <a href="#">Home</a>
+
+          <!-- Other portfolio pages -->
           <a href="pages/dashboard.html">Dashboard</a>
           <a href="pages/achievements.html">Achievements</a>
           <a href="pages/gallery.html">Gallery</a>
@@ -30,36 +103,138 @@
         </nav>
       </header>
 
-      <section>
-        <article>
-          <img src="https://placehold.co/400x400" alt="Utsugi Lenka Profile" />
+      <!--
+        ==================================================
+        HERO SECTION
+        ==================================================
+
+        ACTIVITY:
+
+        The hero section is the main introduction
+        of your portfolio.
+
+        It should contain:
+        - Your profile picture
+        - Your name
+        - Your grade and section
+      -->
+      <section class="hero">
+        <!--
+          PROFILE IMAGE
+
+          ACTIVITY:
+          Replace the image with your own profile picture.
+
+          The CSS will make the image circular using:
+
+          border-radius: 50%;
+        -->
+        <article class="hero__img-card">
+          <img class="hero__img" src="./assets/images/uploads/utsugi.jpg" alt="Utsugi Lenka Profile" />
         </article>
 
-        <article>
-          <h1>Utsugi Lenka</h1>
-          <p>Grade 12 - Alcaraz</p>
+        <!--
+          HERO DETAILS
 
-          <p>Address: 123 Mabini Street, Cebu City, Philippines</p>
-          <p>Phone: +63 912 345 6789</p>
-          <p>Email: lenka@example.com</p>
-          <p>Birthdate: January 20, 2009</p>
+          ACTIVITY:
+          Replace the name and grade/section
+          with your own information.
+        -->
+        <article class="hero__details">
+          <!--
+            text-4xl is NOT defined in this HTML file.
+
+            It is a reusable typography class that should
+            come from:
+
+            assets/css/base/text.css
+
+            You must copy text.css into your project and
+            import it through style.css.
+          -->
+          <h1 class="text-4xl">Utsugi Lenka</h1>
+
+          <!--
+            text-md is also a reusable typography class
+            from text.css.
+          -->
+          <p class="text-md">Grade 12 - Alcaraz</p>
         </article>
       </section>
 
-      <section>
-        <h2>Educational Background</h2>
+      <!--
+        ==================================================
+        PERSONAL AND EDUCATIONAL INFORMATION
+        ==================================================
 
-        <p>Kindergarten: Bright Kids Kindergarten</p>
-        <p>Elementary: Mabini Elementary School</p>
-        <p>Junior High School: Cebu City Junior High School</p>
-        <p>Senior High School: Britech College</p>
-        <p>Current School: Britech College</p>
+        ACTIVITY:
+
+        This section contains two information cards:
+        1. Personal Information
+        2. Educational Background
+
+        Replace all sample information with your own.
+      -->
+      <section class="details">
+        <!-- PERSONAL INFORMATION -->
+        <article class="details__card">
+          <!--
+            text-2xl comes from text.css.
+
+            DO NOT create text-2xl inside landing.css.
+
+            Instead, import text.css through style.css.
+          -->
+          <h1 class="text-2xl">Personal Information</h1>
+
+          <p class="text-base">Address: 123 Mabini Street, Cebu City, Philippines</p>
+
+          <p class="text-base">Phone: +63 912 345 6789</p>
+
+          <p class="text-base">Email: lenka@example.com</p>
+
+          <p class="text-base">Birthdate: January 20, 2009</p>
+        </article>
+
+        <!-- EDUCATIONAL BACKGROUND -->
+        <article class="details__card">
+          <h2 class="text-2xl">Educational Background</h2>
+
+          <p class="text-base">Kindergarten: Bright Kids Kindergarten</p>
+
+          <p class="text-base">Elementary: Mabini Elementary School</p>
+
+          <p class="text-base">Junior High School: Cebu City Junior High School</p>
+
+          <p class="text-base">Senior High School: Britech College</p>
+
+          <p class="text-base">Current School: Britech College</p>
+        </article>
       </section>
 
-      <section>
-        <h2>My Expectation</h2>
+      <!--
+        ==================================================
+        EXPECTATION
+        ==================================================
 
-        <p>
+        ACTIVITY:
+
+        Write your own paragraph about your expectations
+        for the school year.
+
+        Use the existing:
+        - column-card
+        - column-card__text
+
+        classes.
+
+        Do NOT create another class just for the paragraph
+        unless you have a specific design requirement.
+      -->
+      <section class="column-card">
+        <h2 class="text-2xl">My Expectation</h2>
+
+        <p class="text-base column-card__text">
           I expect this school year to be a meaningful and productive experience. I hope to gain new knowledge, improve
           my skills, and become more confident in facing different challenges. I also expect to meet new friends and
           build positive relationships with my classmates, teachers, and other members of the school community. I want
@@ -68,27 +243,66 @@
         </p>
       </section>
 
-      <section>
-        <h2>Hobbies</h2>
+      <!--
+        ==================================================
+        HOBBIES
+        ==================================================
 
-        <p>Listening to Music</p>
-        <p>Watching Anime</p>
-        <p>Playing Online Games</p>
-        <p>Drawing</p>
+        ACTIVITY:
+
+        Replace the sample hobbies with your own hobbies.
+
+        Example:
+        - Reading
+        - Basketball
+        - Photography
+        - Playing Guitar
+      -->
+      <section class="block-card">
+        <h2 class="text-2xl">Hobbies</h2>
+
+        <p class="text-base">Listening to Music</p>
+        <p class="text-base">Watching Anime</p>
+        <p class="text-base">Playing Online Games</p>
+        <p class="text-base">Drawing</p>
       </section>
 
-      <section>
-        <h2>Interests</h2>
+      <!--
+        ==================================================
+        INTERESTS
+        ==================================================
 
-        <p>Web Development</p>
-        <p>Digital Art</p>
-        <p>Technology</p>
-        <p>Creative Writing</p>
+        ACTIVITY:
+
+        Replace the sample interests with your own
+        interests.
+      -->
+      <section class="block-card">
+        <h2 class="text-2xl">Interests</h2>
+
+        <p class="text-base">Web Development</p>
+        <p class="text-base">Digital Art</p>
+        <p class="text-base">Technology</p>
+        <p class="text-base">Creative Writing</p>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Utsugi Lenka. All Rights Reserved.</p>
+    <!--
+      ==================================================
+      FOOTER
+      ==================================================
+
+      ACTIVITY:
+
+      Replace the name with your own name.
+
+      You may also add additional information such as:
+      - School
+      - Section
+      - Portfolio year
+    -->
+    <footer class="footer">
+      <p class="text-base">&copy; 2026 Utsugi Lenka. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
