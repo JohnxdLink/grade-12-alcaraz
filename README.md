@@ -30,6 +30,10 @@ https://www.w3schools.com/html/
 
 https://www.w3schools.com/css/
 
+### Website Layout Guide
+
+https://docs.google.com/document/d/1XBxslT7-a1t45YmTGFFWVs_NVtTVAFJi2vlrWrFcSiM/edit?usp=sharing
+
 ### Recommended Folder Structure
 
 ```
