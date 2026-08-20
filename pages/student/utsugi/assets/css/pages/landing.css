@@ -1,22 +1,364 @@
+/*
+==================================================
+LANDING PAGE CSS
+==================================================
+
+ACTIVITY GUIDE:
+
+This file contains the CSS responsible for the
+LAYOUT and DESIGN of the landing page.
+
+Do NOT place reusable typography classes such as:
+
+.text-base
+.text-md
+.text-2xl
+.text-4xl
+
+in this file.
+
+Those classes should come from:
+
+assets/css/base/text.css
+
+The text.css file should be imported through:
+
+assets/css/style.css
+*/
+
+/*
+==================================================
+HEADER
+==================================================
+
+ACTIVITY:
+
+Create a sticky header that remains visible when
+the user scrolls down the page.
+*/
+
 .header {
-  padding: 12px;
+  /* Keeps the header visible while scrolling */
+  position: sticky;
+
+  /* Stick the header to the top of the page */
+  top: 0;
+
+  /* Places the header above other elements */
+  z-index: 1;
+
+  /* Header background */
+  background: #ffffff;
+
+  /* Space inside the header */
+  padding: 8px;
+
+  /* Places logo and navigation beside each other */
   display: flex;
+
+  /* Logo on the left, navigation on the right */
   justify-content: space-between;
+
+  /* Vertically centers the contents */
   align-items: center;
+
+  /* Adds a shadow below the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/*
+==================================================
+HEADER LOGO
+==================================================
+
+ACTIVITY:
+
+The logo area contains the school logo and
+school information.
+*/
+
 .header__logo {
+  /* Places the logo and text beside each other */
   display: flex;
+
+  /* Vertically centers the logo and text */
   align-items: center;
+
+  /* Adds space between the logo and text */
   gap: 12px;
 }
+
+/*
+==================================================
+HEADER LOGO IMAGE
+==================================================
+
+ACTIVITY:
+
+Change the width and height if you want
+a different logo size.
+*/
 
 .header__logo--img-size {
   width: 72px;
   height: 72px;
 }
 
+/*
+==================================================
+NAVIGATION
+==================================================
+
+ACTIVITY:
+
+The navigation uses flexbox to arrange the
+links horizontally.
+*/
+
 .header__nav {
+  /* Places navigation links in one row */
   display: flex;
+
+  /* Adds space between navigation links */
   gap: 12px;
+}
+
+/*
+==================================================
+HERO SECTION
+==================================================
+
+ACTIVITY:
+
+The hero section is the main visual introduction
+of the portfolio.
+
+It contains:
+- Profile image
+- Name
+- Grade/section
+*/
+
+.hero {
+  /* Space above the hero content */
+  padding-top: 24px;
+
+  /* Makes the hero occupy the full width */
+  width: 100%;
+
+  /* Makes the hero approximately one viewport tall */
+  height: 100dvh;
+
+  /* Enables flexbox */
+  display: flex;
+
+  /* Places the children vertically */
+  flex-direction: column;
+
+  /* Adds space between the children */
+  gap: 12px;
+
+  /*
+    Adds a semi-transparent white overlay
+    on top of the background image.
+  */
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    /*
+      ACTIVITY:
+
+      Check that the path to your background
+      image is correct.
+
+      landing.css is located inside:
+
+      assets/css/pages/
+
+      Therefore ../../ moves back to assets/
+      before accessing images/backgrounds/.
+    */
+    url("../../images/backgrounds/hero.jpg");
+
+  /* Makes the background cover the entire section */
+  background-size: cover;
+
+  /* Prevents the image from repeating */
+  background-repeat: no-repeat;
+}
+
+/*
+==================================================
+HERO DETAILS
+==================================================
+
+ACTIVITY:
+
+Center the student's name and grade/section.
+*/
+
+.hero__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+==================================================
+HERO IMAGE CARD
+==================================================
+
+ACTIVITY:
+
+Use flexbox to center the profile image.
+*/
+
+.hero__img-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+==================================================
+HERO IMAGE
+==================================================
+
+ACTIVITY:
+
+Make the profile picture:
+- 256px wide
+- 256px high
+- circular
+- properly cropped
+*/
+
+.hero__img {
+  width: 256px;
+  height: 256px;
+
+  /*
+    border-radius: 50% turns a square image
+    into a circle.
+  */
+  border-radius: 50%;
+
+  /*
+    object-fit: cover prevents the image from
+    becoming distorted.
+  */
+  object-fit: cover;
+}
+
+/*
+==================================================
+DETAILS SECTION
+==================================================
+
+ACTIVITY:
+
+This section contains the Personal Information
+and Educational Background cards.
+
+Use flexbox to place them beside each other.
+*/
+
+.details {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+==================================================
+DETAILS CARD
+==================================================
+
+ACTIVITY:
+
+The two cards should share the available
+horizontal space equally.
+
+flex: 1 means each card can grow equally.
+*/
+
+.details__card {
+  flex: 1;
+}
+
+/*
+==================================================
+COLUMN CARD
+==================================================
+
+ACTIVITY:
+
+This class is used for sections where the
+content should be arranged vertically and
+centered.
+
+Example:
+"My Expectation"
+*/
+
+.column-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+==================================================
+COLUMN CARD TEXT
+==================================================
+
+ACTIVITY:
+
+Center the paragraph inside the expectation
+section.
+*/
+
+.column-card__text {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/*
+==================================================
+BLOCK CARD
+==================================================
+
+ACTIVITY:
+
+This is a simple block-style section.
+
+It is currently used for:
+- Hobbies
+- Interests
+
+You may reuse this class for other sections
+that have a similar layout.
+*/
+
+.block-card {
+  padding: 24px;
+  display: block;
+}
+
+/*
+==================================================
+FOOTER
+==================================================
+
+ACTIVITY:
+
+Center the footer content horizontally
+and vertically.
+*/
+
+.footer {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
