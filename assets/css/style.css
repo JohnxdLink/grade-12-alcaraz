@@ -1,6 +1,6 @@
 @import url("./base/reset.css");
+@import url("./base/theme.css");
 @import url("./base/text.css");
-@import url("./components/header/header.css");
 @import url("./base/display.css");
 @import url("./base/flex.css");
 @import url("./base/gap.css");
@@ -10,23 +10,5 @@
 @import url("./base/width.css");
 @import url("./base/height.css");
 @import url("./base/colors.css");
-
-:root {
-  /* Primary Palette */
-  --primary: #d5cc34;
-  --secondary: #051837;
-  --accent: #adaf98;
-  --warning: #d3ab54;
-  --dark: #424243;
-
-  /* Optional Shades */
-  --white: #ffffff;
-  --black: #000000;
-  --light: #f8f9fa;
-  --gray: #6c757d;
-  --light-gray: #c3c2c2;
-
-  --warning-50: #d3ab5480;
-  --secondary-50: #05183780;
-  --accent-50: #adaf9880;
-}
+@import url("./base/shadow.css");
+@import url("./components/header/header.css");
