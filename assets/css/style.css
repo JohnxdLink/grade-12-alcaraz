@@ -11,4 +11,9 @@
 @import url("./base/height.css");
 @import url("./base/colors.css");
 @import url("./base/shadow.css");
+@import url("./base/opacity.css");
+@import url("./base/overflow.css");
+@import url("./base/position.css");
+@import url("./base/radius.css");
+@import url("./base/z-index.css");
 @import url("./components/header/header.css");
