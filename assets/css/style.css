@@ -1,6 +1,6 @@
 @import url("./base/reset.css");
+@import url("./base/theme.css");
 @import url("./base/text.css");
-@import url("./components/header/header.css");
 @import url("./base/display.css");
 @import url("./base/flex.css");
 @import url("./base/gap.css");
@@ -10,23 +10,12 @@
 @import url("./base/width.css");
 @import url("./base/height.css");
 @import url("./base/colors.css");
+@import url("./base/shadow.css");
+@import url("./base/opacity.css");
+@import url("./base/overflow.css");
+@import url("./base/position.css");
+@import url("./base/radius.css");
+@import url("./base/z-index.css");
 
-:root {
-  /* Primary Palette */
-  --primary: #d5cc34;
-  --secondary: #051837;
-  --accent: #adaf98;
-  --warning: #d3ab54;
-  --dark: #424243;
-
-  /* Optional Shades */
-  --white: #ffffff;
-  --black: #000000;
-  --light: #f8f9fa;
-  --gray: #6c757d;
-  --light-gray: #c3c2c2;
-
-  --warning-50: #d3ab5480;
-  --secondary-50: #05183780;
-  --accent-50: #adaf9880;
-}
+/* https://fontawesome.com/v6/search?ic=free-collection */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
