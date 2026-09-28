@@ -1,3 +1,22 @@
+const backToTop = () => {
+  const homeBtn = document.getElementById("home-btn");
+  const mainContainer = document.getElementById("main-container");
+
+  if (!homeBtn || !mainContainer) {
+    console.error("Home button or main container not found.");
+    return;
+  }
+
+  homeBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    mainContainer.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+};
+
 const updateLogoDisplay = (mediaQuery) => {
   const logo = document.getElementById("logo");
 
@@ -22,6 +41,7 @@ const updateMenuLabel = (mediaQuery) => {
 };
 
 export const handleNavBarMediaQuery = (mediaQuery) => {
+  backToTop();
   updateLogoDisplay(mediaQuery);
   updatePosition(mediaQuery);
   updateMenuLabel(mediaQuery);

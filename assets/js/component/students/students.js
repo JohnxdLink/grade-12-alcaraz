@@ -234,7 +234,7 @@ const students = [
     name: "Parallon",
     fullname: "Parallon Kay Lane",
     id: "26-0097",
-    group: 6,
+    group: 5,
     role: "UI/UX Designer",
   },
   {

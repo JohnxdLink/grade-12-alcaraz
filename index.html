@@ -17,30 +17,30 @@
             <p class="mt-1 text-gray">Grade 12 - Programming</p>
           </div>
         </div>
-        <button class="btn-ghost btn-nav">
+        <a id="home-btn" class="btn-ghost btn-nav">
           <i class="fa-solid fa-house"></i>
           <span class="text-sm d-none menuLabel">Home</span>
-        </button>
-        <button class="btn-ghost btn-nav">
+        </a>
+        <a class="btn-ghost btn-nav" href="#student-container">
           <i class="fa-solid fa-users"></i>
           <span class="text-sm d-none menuLabel">Students</span>
-        </button>
-        <button class="btn-ghost btn-nav">
+        </a>
+        <a class="btn-ghost btn-nav" href="">
           <i class="fa-solid fa-diagram-project"></i>
           <span class="text-sm d-none menuLabel">Projects</span>
-        </button>
-        <button class="btn-ghost btn-nav">
+        </a>
+        <a class="btn-ghost btn-nav" href="">
           <i class="fa-solid fa-images"></i>
           <span class="text-sm d-none menuLabel">Memories</span>
-        </button>
-        <button class="btn-ghost btn-nav">
+        </a>
+        <a class="btn-ghost btn-nav" href="">
           <i class="fa-solid fa-chalkboard"></i>
           <span class="text-sm d-none menuLabel">Teacher</span>
-        </button>
+        </a>
       </article>
     </header>
 
-    <main class="main-container__h-100 main-container bg-white">
+    <main id="main-container" class="main-container__h-100 main-container bg-white">
       <section class="px-8 d-flex flex-column hero-content gap-5">
         <article id="hero-left-content">
           <h1 class="text-56">Grade <span class="text-primary">12 Alcaraz</span></h1>
@@ -84,13 +84,11 @@
         </article>
       </section>
 
-      <section class="mt-12 pt-6 bg-light-gray student-container">
+      <section id="student-container" class="mt-12 pt-6 bg-light-gray student-container">
         <article class="mb-6 text-center">
           <h1 class="text-40">Students</h1>
           <div class="mt-3 d-flex flex-row justify-center gap-2">
-            <button id="master-list-btn" class="btn-ghost btn-ghost__is-active btn-student__filter">
-              Master Lists
-            </button>
+            <button id="master-list-btn" class="btn-ghost btn-ghost__is-active btn-student__filter">Master List</button>
             <button id="development-team-btn" class="btn-ghost btn-student__filter">Development Team</button>
           </div>
         </article>
